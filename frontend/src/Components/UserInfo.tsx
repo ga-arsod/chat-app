@@ -1,7 +1,7 @@
-
+import style from "../Styles/UserInfo.module.css";
 
 export const UserInfo = () => {
   return (
-    <div>UserInfo</div>
+    <div id={style.UserInfo}>UserInfo</div>
   )
 }

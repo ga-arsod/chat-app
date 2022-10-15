@@ -4,5 +4,20 @@
 }
 .App {
   text-align: center;
+  display: flex;
 }
 
+#ChatListContainer {
+  flex: 3;
+  border:  1px solid green;
+}
+
+#ChatPanel {
+ flex: 7;
+ border: 1px solid blue;
+}
+
+#UserInfo {
+  flex: 3;
+  border: 1px solid gray;
+}
