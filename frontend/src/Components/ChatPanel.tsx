@@ -1,4 +1,5 @@
-import { Avatar, Divider } from "@mui/material";
+import {useState} from "react";
+import { Avatar, Divider, Button, Menu, MenuItem } from "@mui/material";
 import style from "../Styles/ChatPanel.module.css";
 import VideocamOutlinedIcon from '@mui/icons-material/VideocamOutlined'; 
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
@@ -11,6 +12,18 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 
 export const ChatPanel = () => {
+
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+
   return (
     <div id={style.ChatPanel}>
       <div id={style.Header}>
@@ -20,9 +33,33 @@ export const ChatPanel = () => {
         </div>
 
         <div id={style.headerRight}>
-          <VideocamOutlinedIcon/>
-          <CallOutlinedIcon/>
-          <MoreHorizOutlinedIcon/>
+          <VideocamOutlinedIcon style={{ color: "gray" }} />
+          <CallOutlinedIcon style={{ color: "gray" }}/>
+          <Button
+            id="basic-button"
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+            >
+            <MoreHorizOutlinedIcon style={{color: "gray"}}/>
+          </Button>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              'aria-labelledby': 'basic-button',
+            }}
+            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+          >
+            <MenuItem onClick={handleClose}>Contact Info</MenuItem>
+            <MenuItem onClick={handleClose}>Mute Notifications</MenuItem>
+            <MenuItem onClick={handleClose}>Clear Messages</MenuItem>
+            <MenuItem onClick={handleClose}>Delete Chat</MenuItem>
+          </Menu>
         </div>
       </div>
       <Divider variant="middle" />

@@ -1,8 +1,8 @@
 #ChatPanel {
     width: 40%;
-    border : 1px solid green;
-    padding: 30px 0;
-    height: 93vh;
+    padding: 20px 0px;
+    /* border-right: 1px solid red; */
+    height: 94.5vh;
 }
 
 #Header {
@@ -26,8 +26,10 @@
 #MessageContainer {
     overflow-y: scroll;
     height: 90%;
+    background-color: rgb(241, 241, 241);
 }
 
 #Bottom {
-    padding: 10px 20px 0;
+    padding: 10px 20px;
+    background-color: rgb(241, 241, 241);
 }
