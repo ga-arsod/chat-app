@@ -25,6 +25,9 @@
 
 #MessageContainer {
     overflow-y: scroll;
-    border: 1px solid red;
     height: 90%;
+}
+
+#Bottom {
+    padding: 10px 20px 0;
 }

@@ -21,7 +21,7 @@ export const ChatList = () => {
             <Paper
               id={styles.searchBox}
               component="form"
-              sx={{ p: '0 2px', display: 'flex', alignItems: 'center', borderRadius: "50px" }}
+              sx={{ p: '0 1px', display: 'flex', alignItems: 'center'}}
             >
               <InputBase
                 sx={{ ml: 2, flex: 1 }}
