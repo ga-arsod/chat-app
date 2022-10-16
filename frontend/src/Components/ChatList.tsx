@@ -234,13 +234,13 @@ export const ChatList = () => {
           </div>
 
       {/* Floating Add icon to add new friend in the chat room */}
-      <Tooltip title="New Chat">
+      {/* <Tooltip className={styles.floatButton} title="New Chat">
 
-        <Fab className={styles.floatButton} color="secondary" aria-label="add">
+        <Fab  color="secondary" aria-label="add">
           
           <AddIcon />
         </Fab>
-      </Tooltip>
+      </Tooltip> */}
     </div>
   )
 }

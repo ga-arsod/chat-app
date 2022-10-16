@@ -1,8 +1,9 @@
 #ChatListContainer {
     padding: 30px 0px;
     border: 1px solid red;
-    flex : 3;
-    height: 857px;
+    /* flex : 3; */
+    height: 93vh;
+    width: 30%;
 }
 #headerContainer {
     height: 16%;
@@ -86,8 +87,8 @@
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
-    right: 40px;
+    bottom: 2%;
+    left: 22%;
     background-color: #0C9;
     color: #FFF;
     border-radius: 50px;
