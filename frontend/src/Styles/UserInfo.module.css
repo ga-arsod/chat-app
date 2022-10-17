@@ -1,5 +1,32 @@
 #UserInfo {
     /* flex: 3; */
-    border: 1px solid gray;
-    width: 30%;
+    width: 25%;
+    padding: 20px 0;
+    height: 94.5vh;
+}
+
+#topDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20%;
+}
+
+#middleDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px 0 20px;
+}
+
+.span {
+    color: gray;
+    font-weight: 500;
+}
+
+#bottom > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 10px;
 }
