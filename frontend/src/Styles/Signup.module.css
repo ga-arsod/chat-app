@@ -1,0 +1,23 @@
+#signupContainer {
+    margin: auto;
+    width: 50%;
+}
+
+#signupContainer > form{
+    display: flex;
+    width: 50%;
+    margin: 25vh auto;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#signupContainer>form > button {
+    width: 50%;
+    align-self: center;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: large;
+}
