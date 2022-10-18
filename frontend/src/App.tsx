@@ -14,10 +14,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <SampleChat/> */}
+      <SampleChat/>
 
       {/* <Login /> */}
-      <Signup />
+      {/* <Signup /> */}
 
       {/* <ChatList/>
       <ChatPanel/>
