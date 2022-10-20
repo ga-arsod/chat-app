@@ -3,8 +3,12 @@ import io from "socket.io-client";
 import { nanoid } from 'nanoid';
 
 
-const socket = io("http://localhost:5000");
+const socket = io("http://localhost:5000", {autoConnect: false});
 const userName = nanoid(6);
+
+socket.onAny((event, ...args) => {
+  console.log(event, args);
+});
 
 interface Ipayload {
     message: string,
